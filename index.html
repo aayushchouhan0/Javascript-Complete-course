@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This is my protfolio website</title>
+    <!-- <script src="15.DOM.js" defer></script> -->
+    <!-- <script src="16.Dom_tree.js" defer></script> -->
+    <!-- <script src="16.Dom_tree.js" defer></script> -->
+    <!-- <script src="../17.jsEvents.js" defer></script> -->
+    <script src="project.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <nav class=" nav container">
+            <h1 class="logo">Website</h1>
+            <ul class="Nav-items">
+                <li class="nav-items"><a href="#home">Home</a></li>
+                <li class="nav-items"><a href="">Todo</a></li>
+                <li class="nav-items"><a href="">Sign In</a></li>
+            </ul>
+        </nav>
+        <div class="headline">
+            <h2 id="main-heading">Manage Your Task <span style="display: none;">Hello</span></h2>
+            <!-- This is a first way to implement the  -->
+           <!-- <button class="btnHeadline" onclick="printing()">Learn More</button> -->
+           <button class="btnHeadline">Learn More</button>
+        </div>
+    </header>
+
+    <!-- Here is starting section  -->
+    <div class="section-all-part">
+        <section class="todo container">
+            <h2>Your plan for today?</h2>
+            <form action="" class="form-todo">
+                <input type="text" placeholder="Todo">
+                <input type="submit" value="Add Todo" class="btn btn-design">
+            </form>
+            <ul class="todoListItems">
+                <li>
+                    <span class="edit-text">Do this Do that</span>
+                    <div class="btnitems">
+                        <button  class="btn-edit done">Done</button>
+                        <button class="btn-edit remove">Remove</button>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <section class="section2-Design container">
+            <h2>Sign Up</h2>
+            <form action="" class="from-group">
+                <div class="makingUniuqe-from">
+                    <label for="username">Username</label>
+                    <input type="text" name="username" id="username" required minlength="2" maxlength="20" placeholder="Username...">
+                </div>
+                <div class="makingUniuqe-from">
+                    <label for="Email">Email</label>
+                    <input type="email" name="Email" id="Email" required minlength="2" maxlength="20" placeholder="Email...">
+                </div>
+                <div class="makingUniuqe-from">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" required minlength="2" maxlength="20" placeholder="password...">
+                </div>
+                <div class="makingUniuqe-from">
+                    <label for="confirmpassword">Confirm password</label>
+                    <input type="password" name="confirmpassword" id="confirmpassword" required minlength="2" maxlength="20" placeholder="confirmpassword...">
+                </div>
+                <div class="makingUniuqe-from">
+                    <label for="username1">Username</label>
+                    <input type="text" name="username1" id="username1" required minlength="2" maxlength="20" placeholder="Username...">
+                </div>
+     
+               <div class="btn2">
+                <input type="submit" value="SUBMIT" class="btn btn-edit" >
+               </div>
+            </form>
+        </section>
+
+        
+    </div>
+</body>
+</html>
